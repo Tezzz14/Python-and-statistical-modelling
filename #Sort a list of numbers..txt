@@ -1,0 +1,8 @@
+#Sort a list of numbers.
+def sort_numbers(numbers):
+    numbers.sort()
+    return numbers
+
+my_numbers = list(map(int,input("Enter the elements: ").split()))
+sorted_numbers = sort_numbers(my_numbers)
+print("Sorted numbers:", sorted_numbers)

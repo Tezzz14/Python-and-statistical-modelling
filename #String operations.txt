@@ -1,0 +1,18 @@
+#String operators
+string=str(input("Enter a string: "))
+lw_string=string.lower()
+uw_string=string.upper()
+swap_string=string.swapcase()
+split_string=string.split()
+alpha_string=string.isalpha()
+print("The elements in the string are:")
+for char in string:
+    print(char)
+print("Lowercase:",lw_string)
+print("Uppercase:",uw_string)
+print("Swapped case:",swap_string)
+print("Splitting the string with space:",split_string)
+print("String contains only alphabets:",alpha_string)
+
+
+

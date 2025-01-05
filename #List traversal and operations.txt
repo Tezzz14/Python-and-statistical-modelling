@@ -1,0 +1,18 @@
+#List traversal and operations
+My_list = list(map(int, input("Enter the elements: ").split()))
+a = int(input("Enter the value to append: "))
+My_list.append(a)
+b = int(input("Enter the position for the value to be entered: "))
+c = int(input("Enter the value to be entered: "))
+My_list.insert(b, c)
+
+print("The sum of lists is:", sum(My_list))
+print("The length of lists is:", len(My_list))
+print("The minimum value residing in list is:", min(My_list))
+print("The elements in the list are:")
+for i in My_list:
+    print(i)
+
+
+
+
