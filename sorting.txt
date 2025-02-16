@@ -1,0 +1,9 @@
+import pandas as pd
+def sort_csv_by_column(input_file, sort_column):
+    df = pd.read_csv(input_file)
+    sorted_df = df.sort_values(by=sort_column).reset_index(drop=True)
+    print(f"Sorted Data based on '{sort_column}':")
+    print(sorted_df)
+input_file = 'sorting.csv'  
+sort_column = input("enter the column name to be sorted:")      
+sort_csv_by_column(input_file, sort_column)
