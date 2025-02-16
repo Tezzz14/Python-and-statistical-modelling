@@ -1,0 +1,15 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.cluster.hierarchy import dendrogram, linkage
+from sklearn.datasets import make_blobs
+
+X, _ = make_blobs(n_samples=100, centers=4, random_state=42)
+
+Z = linkage(X, method='ward')
+
+plt.figure(figsize=(10, 7))
+dendrogram(Z)
+plt.title('Hierarchical Clustering Dendrogram')
+plt.xlabel('Data Points')
+plt.ylabel('Distance')
+plt.show()
