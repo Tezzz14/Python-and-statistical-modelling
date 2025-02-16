@@ -1,0 +1,30 @@
+import matplotlib.pyplot as p
+import numpy as np
+
+x = []
+y = []
+
+for i in range(0, 8):
+    x.append(i)
+    y.append(i**4 + 5)
+
+xp = np.array(x)
+yp = np.array(y)
+
+p.xlabel("x")
+p.ylabel("y")
+p.title("f(x) = x^4 + 5")
+p.plot(xp, yp)
+p.show()
+
+p.xlabel("x")
+p.ylabel("y")
+p.title("f(x) = x^4 + 5")
+p.stem(xp, yp)
+p.show()
+
+p.xlabel("x")
+p.ylabel("y")
+p.title("f(x) = x^4 + 5")
+p.bar(xp, yp)
+p.show()

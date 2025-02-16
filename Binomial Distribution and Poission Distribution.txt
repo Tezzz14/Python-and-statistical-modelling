@@ -1,0 +1,11 @@
+import math
+n = int(input("Enter the number of trials (n) for binomial distribution: "))
+p = float(input("Enter the probability of success (p) for binomial distribution:"))
+lam = float(input("Enter the average events per interval (λ) for Poisson distribution: "))
+k = int(input("Enter the number of events (k) for Poisson distribution: "))
+binomial_prob = (math.factorial(n) / (math.factorial(k) * math.factorial(n - k))) * (p ** k) * ((1 - p) ** (n - k))
+poisson_prob = (math.exp(-lam) * (lam ** k)) / math.factorial(k)
+print("Binomial Distribution Probability:", binomial_prob)
+print("Poisson Distribution Probability:", poisson_prob)
+
+
