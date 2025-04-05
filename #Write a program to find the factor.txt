@@ -1,0 +1,20 @@
+#Write a program to find the factorial of a number and check whether the factorial of a number is palindrome or not
+
+n=int(input("Enter a number"))
+fa=1
+if(n<=0):
+    print("not valid")
+else:
+    for i in range(2,n+1):
+        fa=fa*i
+    print("Factorial of",n,"=",fa)
+    fa=str(fa)
+    if(fa==(fa[::-1])):
+        print("palindrome")
+    else:
+        print("not palindrome")
+        
+         
+        
+     
+ 
